@@ -6,7 +6,7 @@ from fastapi import HTTPException, Request
 from fastapi.security import HTTPAuthorizationCredentials, HTTPBearer
 from jwt import PyJWTError
 
-from constants import ALGORITHM, SECRET_KEY
+from .constants import ALGORITHM, SECRET_KEY
 
 
 class JWTBearer(HTTPBearer):

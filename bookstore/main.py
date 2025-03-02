@@ -5,9 +5,9 @@ from datetime import timedelta
 from fastapi import Depends, FastAPI
 from sqlalchemy.orm import Session
 
-from bookmgmt import router as book_router
-from database import UserCredentials, get_db
-from utils import create_access_token
+from .bookmgmt import router as book_router
+from .database import UserCredentials, get_db
+from .utils import create_access_token
 
 app = FastAPI()
 
