@@ -23,10 +23,10 @@ jobs:
         pip install -r requirements.txt
     - name: Run Unit Tests and Generate Coverage Report
       run: |
-        pytest --cov=bookstore/ --cov-report term-missing bookstore/tests/unit
+        pytest --cov=bookstore/ --cov-report term-missing tests/unit
     - name: Run Integration Tests
       run: |
-        pytest bookstore/tests/integration
+        pytest tests/integration
     - name: Upload Coverage to Codecov
       uses: codecov/codecov-action@v3
       with:
