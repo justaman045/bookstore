@@ -27,9 +27,9 @@ jobs:
     - name: Run Integration Tests
       run: |
         pytest tests/integration
-    - name: Upload Coverage to Codecov
-      uses: codecov/codecov-action@v3
-      with:
-        token: ${{ secrets.CODECOV_TOKEN }} #Optional. Add codecov token to secrets.
-        flags: unittests
-        fail_ci_if_error: true
+    # - name: Upload Coverage to Codecov
+    #   uses: codecov/codecov-action@v3
+    #   with:
+    #     token: ${{ secrets.CODECOV_TOKEN }} #Optional. Add codecov token to secrets.
+    #     flags: unittests
+    #     fail_ci_if_error: true
